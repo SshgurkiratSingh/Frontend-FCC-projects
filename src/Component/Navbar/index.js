@@ -1,5 +1,5 @@
 import "./index.css";
-import React, { Component } from "react";
+import React from "react";
 
 export default function NavBar() {
   return (
@@ -11,14 +11,14 @@ export default function NavBar() {
           </div>
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
-              <li className="active ">
+              <li className=" ">
                 <a href="./quote">Quote Generator</a>
               </li>
               <li>
-                <a href="./markDown">MarkDown Previewer</a>
+                <a href="./markDown">MarkDown</a>
               </li>
               <li>
-                <a href="./calculator">JS Calculator</a>
+                <a href="./calculator">Calculator</a>
               </li>
               <li>
                 <a href="./drum">Drum Machine</a>

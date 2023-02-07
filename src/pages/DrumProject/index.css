@@ -1,0 +1,15 @@
+#drum-machine{
+    width:10%;
+    overflow-x: hidden;
+    margin :50px auto -10% 45%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.display{   
+   
+    --tw-bg-opacity: 1;
+    background-color: hsl(var(--n)/var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: hsl(var(--nc)/var(--tw-text-opacity));
+    border-radius: var(--rounded-box,1rem);
+    
+}

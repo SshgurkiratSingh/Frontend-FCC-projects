@@ -1,0 +1,16 @@
+.main{
+    margin-top: 10px;
+}
+.textBox{
+   background-color:#212121 ;
+   width:40%;
+}
+.textbox{
+    width:40%;
+    min-width: 300px;
+    background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+  background-repeat:repeat-y, repeat;
+  -webkit-border-radius:12px;
+  border-radius:12px;
+ 
+}

@@ -34,6 +34,11 @@ function DrumProject() {
       key: "A",
     },
     {
+      name: "Tink",
+      sound: tink,
+      key: "S",
+    },
+    {
       name: "kick",
       sound: kick,
       key: "D",
@@ -53,11 +58,6 @@ function DrumProject() {
       sound: ride,
       key: "C",
     },
-    {
-      name: "Tink",
-      sound: tink,
-      key: "S",
-    },
   ]);
   const [text, setText] = useState("Press a Button or a related key");
 
@@ -73,7 +73,7 @@ function DrumProject() {
             {text}
           </div>
         </center>
-        <div className="place-content-center  m-2 flex">
+        <div className="place-content-center btn-list m-2 flex">
           {sound.map((s, i) => (
             <Drum
               key={i}

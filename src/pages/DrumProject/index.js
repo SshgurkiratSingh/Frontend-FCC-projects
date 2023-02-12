@@ -10,7 +10,7 @@ import kick from "./sounds/kick.wav";
 import openhat from "./sounds/openhat.wav";
 import ride from "./sounds/ride.wav";
 import snare from "./sounds/snare.wav";
-
+import tink from "./sounds/tink.wav";
 function DrumProject() {
   const [sound, setSound] = useState([
     {
@@ -53,21 +53,30 @@ function DrumProject() {
       sound: ride,
       key: "C",
     },
+    {
+      name: "Tink",
+      sound: tink,
+      key: "S",
+    },
   ]);
   const [text, setText] = useState("Press a Button or a related key");
 
   return (
     <>
       {" "}
-      <h1 className="block font-extrabold text-5xl ">React Drum Project</h1>
+      <center>
+        <h1 className="block font-extrabold text-5xl ">React Drum Project</h1>
+      </center>
       <div id="drum-machine">
-        <div id="display" className="display content-center	">
-          {text}
-        </div>
-        <div className="place-content-center grid ">
-          {sound.map((s) => (
+        <center>
+          <div id="display" className="display m-3 content-center	">
+            {text}
+          </div>
+        </center>
+        <div className="place-content-center  m-2 flex">
+          {sound.map((s, i) => (
             <Drum
-              key={s.key}
+              key={i}
               sound={s.sound}
               val={s.key}
               name={s.name}

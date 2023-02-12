@@ -2,7 +2,7 @@
 
   }
   
-  .display {
-  
+  .bton:active,.bton.playing {
+   transform:scale(1.1)
   }
   
